@@ -1,0 +1,18 @@
+@import url("theme.css");
+
+/* uncomment for greater width in sphinx_rtd_theme
+//.wy-nav-content {
+    //max-width: 90%;
+}
+*/
+
+/* uncomment for smaller logo in sphinx_rtd_theme
+.wy-side-nav-search .wy-dropdown > a.icon img.logo, .wy-side-nav-search > a.icon img.logo {
+  width: 140px;
+}
+*/
+
+/* smaller logo in furo theme */
+.sidebar-logo {
+  width: 140px;
+}

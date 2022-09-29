@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "almonaut_uwatlib"
+version = "0.1.0"
+authors = [
+  { name="University of Waterloo Library" },
+]
+maintainers = [
+  { name="University of Waterloo Library" }
+]
+license = {text = "Apache-2.0"}
+description = "A library to interact with the Ex Libris Alma(c) API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic>=1.10.2",
+    "requests>=2.28.1",
+]
+
+[project.urls]
+"Home Page" = "https://github.com/uwatlib/almonaut"
+"Bug Tracker" = "https://github.com/uwatlib/almonaut/issues"
+"Changelog" = "https://github.com/uwatlib/almonaut/blob/master/CHANGELOG.md"
+"Documentation" = "https://github.com/uwatlib/almonaut"
