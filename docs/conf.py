@@ -23,7 +23,7 @@ release = '0.1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.githubpages',
-    #'sphinx_autodoc_typehints',
+    'sphinx_autodoc_typehints',
     'sphinx_copybutton'
 ]
 
