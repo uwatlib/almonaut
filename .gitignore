@@ -1,0 +1,11 @@
+# bite-compiled
+__pycache__/
+*.pyc
+
+# distribution / packaging
+dist/
+*.egg
+*.egg-info/
+
+# Sphinx documentation build
+docs/_build/
