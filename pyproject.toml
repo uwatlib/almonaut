@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [project.urls]
-"Home Page" = "https://github.com/uwatlib/almonaut"
+"Home Page" = "https://uwatlib.github.io/almonaut/"
 "Bug Tracker" = "https://github.com/uwatlib/almonaut/issues"
 "Changelog" = "https://github.com/uwatlib/almonaut/blob/master/CHANGELOG.md"
-"Documentation" = "https://github.com/uwatlib/almonaut"
+"Documentation" = "https://uwatlib.github.io/almonaut/"
