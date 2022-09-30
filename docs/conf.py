@@ -8,9 +8,12 @@
 
 import os
 import sys
+import pathlib
 from typing import Any, Dict
 
-sys.path.insert(0, os.path.abspath('../src'))
+#sys.path.insert(0, os.path.abspath('../src'))
+src_folder = pathlib.Path(__file__).resolve().parent.parent / "src"
+sys.path.append(str(src_folder))
 
 # -- Project information -----------------------------------------------------
 
