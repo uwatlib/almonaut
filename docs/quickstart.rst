@@ -23,6 +23,10 @@ Import Almonaut and instantiate an API client
 
    alma_api_client = client.AlmaApiClient('a1b2c3myapikeyx1y2z3')
 
+.. note::
+
+   Substitute your own API key for the placeholder shown above.
+
 Example: retrieve a fund by its fund ID
 #######################################
 
