@@ -54,4 +54,6 @@ if len(my_funds.funds) > 0:
         print(f"Fiscal period: {fund.fiscal_period.desc}")
 ```
 
+**Note:** Substitute your own API key for the placeholder shown above.
+
 For more information, see the [documentation](https://uwatlib.github.io/almonaut/).
