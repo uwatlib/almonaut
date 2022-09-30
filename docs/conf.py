@@ -10,8 +10,7 @@ import os
 import sys
 from typing import Any, Dict
 
-root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-sys.path.insert(0, root_path)
+sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
