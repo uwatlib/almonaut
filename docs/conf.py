@@ -18,10 +18,10 @@ sys.path.append(str(src_folder))
 # -- Project information -----------------------------------------------------
 
 project = 'Almonaut'
-copyright = '2022, University of Waterloo'
+copyright = '2022-2023, University of Waterloo'
 author = 'University of Waterloo'
-version = '0.1'
-release = '0.1.0'
+version = '0.2'
+release = '0.2.0'
 
 # -- General configuration ---------------------------------------------------
 
