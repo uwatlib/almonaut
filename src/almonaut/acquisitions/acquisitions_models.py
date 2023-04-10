@@ -323,7 +323,7 @@ class Fund(BaseModel):
     code: str
     name: str
     external_id: Optional[str] = None
-    type_: Optional[Type1] = Field(..., alias='type')
+    type_: Optional[Type1] = Field(alias='type')
     entity_type: EntityType
     owner: Owner1
     status: Status1
@@ -438,7 +438,7 @@ class Price(BaseModel):
 
 
 class Amount(BaseModel):
-    sum_: Optional[float] = Field(..., alias='sum')
+    sum_: Optional[float] = Field(alias='sum')
     currency: Currency4
 
     @validator('sum_', pre=True)
@@ -535,7 +535,7 @@ class PoLine(BaseModel):
     notes: Optional[List[Note1]] = Field(alias='note')
     locations: Optional[List[Location1]] = Field(alias='location')
     interested_users: Optional[List[InterestedUser]] = Field(alias='interested_user')
-    license_: Optional[License2] = Field(..., alias='license')
+    license_: Optional[License2] = Field(alias='license')
     access_model: Optional[str] = None
     url: Optional[str] = None
     base_status: Optional[str] = None
@@ -775,7 +775,7 @@ class Term(BaseModel):
     value: Value
 
 
-class Type6(BaseModel):
+class Type7(BaseModel):
     # used by class Resource
     value: str
     desc: str
@@ -784,11 +784,11 @@ class Type6(BaseModel):
 class Resource(BaseModel):
     pid: str
     name: str
-    type_: Type6 = Field(..., alias='type')
+    type_: Type7 = Field(..., alias='type')
     link: str
 
 
-class Type7(BaseModel):
+class Type8(BaseModel):
     # used by class Note3
     value: str
     desc: str
@@ -799,7 +799,7 @@ class Note3(BaseModel):
     content: Optional[str] = None
     creation_date: date
     created_by: str
-    type_: Optional[Type7] = Field(..., alias='type')
+    type_: Optional[Type8] = Field(alias='type')
 
     _strip_gmt_date_z = validator('creation_date', pre=True, allow_reuse=True)(
         common_validators._strip_gmt_date_z
