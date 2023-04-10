@@ -2,12 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Acquisitions Models" href="acquisitions_models.html" /><link rel="prev" title="Quickstart" href="quickstart.html" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Acquisitions Models" href="acquisitions_models.html" /><link rel="prev" title="Quickstart" href="quickstart.html" />
 
-    <meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
-        <title>Client - Almonaut v0.1</title>
+    <!-- Generated with Sphinx 6.1.3 and Furo 2023.03.27 -->
+        <title>Client - Almonaut v0.2</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
@@ -124,7 +125,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Almonaut v0.1</div></a>
+      <a href="index.html"><div class="brand">Almonaut v0.2</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -144,16 +145,16 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/almonaut_logo_250x194.png" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Almonaut v0.1</span>
+  <span class="sidebar-brand-text">Almonaut v0.2</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -198,14 +199,14 @@
           </label>
         </div>
         <article role="main">
-          <div class="section" id="module-almonaut.client">
+          <section id="module-almonaut.client">
 <span id="client"></span><h1>Client<a class="headerlink" href="#module-almonaut.client" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="almonaut.client.AlmaApiClient">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">almonaut.client.</span></span><span class="sig-name descname"><span class="pre">AlmaApiClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'https://api-ca.hosted.exlibrisgroup.com'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'almaws'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v1'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient" title="Permalink to this definition">#</a></dt>
 <dd><p>The Alma API client.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>api_key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The Alma API key to use.</p></li>
 <li><p><strong>host</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'https://api-ca.hosted.exlibrisgroup.com'</span></code>) – Hostname of the Alma API instance.</p></li>
@@ -219,21 +220,19 @@
 <span class="sig-name descname"><span class="pre">get_fund</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_fund" title="Permalink to this definition">#</a></dt>
 <dd><p>Get a fund record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>id_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma fund ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Fund" title="almonaut.acquisitions.acquisitions_models.Fund"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fund</span></code></a></p>
+</dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
 <dl class="simple">
 <dt>view</dt><dd><p>brief|full</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Fund" title="almonaut.acquisitions.acquisitions_models.Fund"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fund</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -243,23 +242,21 @@
 <span class="sig-name descname"><span class="pre">get_funds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_funds" title="Permalink to this definition">#</a></dt>
 <dd><p>Get fund records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Funds" title="almonaut.acquisitions.acquisitions_models.Funds"><code class="xref py py-class docutils literal notranslate"><span class="pre">Funds</span></code></a></p>
 </dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
 <dl class="simple">
 <dt>view</dt><dd><p>brief|full</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Funds" title="almonaut.acquisitions.acquisitions_models.Funds"><code class="xref py py-class docutils literal notranslate"><span class="pre">Funds</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -269,16 +266,16 @@
 <span class="sig-name descname"><span class="pre">get_fund_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fund_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_fund_transactions" title="Permalink to this definition">#</a></dt>
 <dd><p>Get fund transaction records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fund_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma fund ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.FundTransactions" title="almonaut.acquisitions.acquisitions_models.FundTransactions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FundTransactions</span></code></a></p>
 </dd>
 </dl>
@@ -289,11 +286,14 @@
 <span class="sig-name descname"><span class="pre">get_invoice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invoice_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_invoice" title="Permalink to this definition">#</a></dt>
 <dd><p>Get an invoice record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>invoice_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma invoice ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Invoice" title="almonaut.acquisitions.acquisitions_models.Invoice"><code class="xref py py-class docutils literal notranslate"><span class="pre">Invoice</span></code></a></p>
 </dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
@@ -303,11 +303,6 @@
 <dt>view</dt><dd><p>brief|full</p>
 </dd>
 </dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Invoice" title="almonaut.acquisitions.acquisitions_models.Invoice"><code class="xref py py-class docutils literal notranslate"><span class="pre">Invoice</span></code></a></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -315,13 +310,16 @@
 <span class="sig-name descname"><span class="pre">get_invoices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_invoices" title="Permalink to this definition">#</a></dt>
 <dd><p>Get invoice records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Invoices" title="almonaut.acquisitions.acquisitions_models.Invoices"><code class="xref py py-class docutils literal notranslate"><span class="pre">Invoices</span></code></a></p>
 </dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
@@ -339,11 +337,6 @@
 <dt>view</dt><dd><p>brief|full</p>
 </dd>
 </dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Invoices" title="almonaut.acquisitions.acquisitions_models.Invoices"><code class="xref py py-class docutils literal notranslate"><span class="pre">Invoices</span></code></a></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -351,14 +344,14 @@
 <span class="sig-name descname"><span class="pre">get_invoice_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invoice_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invoice_line_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_invoice_line" title="Permalink to this definition">#</a></dt>
 <dd><p>Get an invoice line record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>invoice_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma invoice ID.</p></li>
 <li><p><strong>invoice_line_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma invoice line ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.InvoiceLine" title="almonaut.acquisitions.acquisitions_models.InvoiceLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">InvoiceLine</span></code></a></p>
 </dd>
 </dl>
@@ -369,16 +362,16 @@
 <span class="sig-name descname"><span class="pre">get_invoice_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invoice_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_invoice_lines" title="Permalink to this definition">#</a></dt>
 <dd><p>Get invoice line records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>invoice_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma invoice ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.InvoiceLines" title="almonaut.acquisitions.acquisitions_models.InvoiceLines"><code class="xref py py-class docutils literal notranslate"><span class="pre">InvoiceLines</span></code></a></p>
 </dd>
 </dl>
@@ -389,11 +382,14 @@
 <span class="sig-name descname"><span class="pre">get_license</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_license" title="Permalink to this definition">#</a></dt>
 <dd><p>Get a license record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>code</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma license code.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.License" title="almonaut.acquisitions.acquisitions_models.License"><code class="xref py py-class docutils literal notranslate"><span class="pre">License</span></code></a></p>
 </dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
@@ -403,11 +399,6 @@
 <dt>include_blank_terms</dt><dd><p>true|false</p>
 </dd>
 </dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.License" title="almonaut.acquisitions.acquisitions_models.License"><code class="xref py py-class docutils literal notranslate"><span class="pre">License</span></code></a></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -415,15 +406,15 @@
 <span class="sig-name descname"><span class="pre">get_licenses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_licenses" title="Permalink to this definition">#</a></dt>
 <dd><p>Get license records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.Licenses" title="almonaut.acquisitions.acquisitions_models.Licenses"><code class="xref py py-class docutils literal notranslate"><span class="pre">Licenses</span></code></a></p>
 </dd>
 </dl>
@@ -434,13 +425,13 @@
 <span class="sig-name descname"><span class="pre">get_po_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_po_line" title="Permalink to this definition">#</a></dt>
 <dd><p>Get a PO Line record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>number</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma PO Line number.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.PoLine" title="almonaut.acquisitions.acquisitions_models.PoLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">PoLine</span></code></a></p>
 </dd>
 </dl>
@@ -451,13 +442,16 @@
 <span class="sig-name descname"><span class="pre">get_po_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_po_lines" title="Permalink to this definition">#</a></dt>
 <dd><p>Get PO Line records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.PoLines" title="almonaut.acquisitions.acquisitions_models.PoLines"><code class="xref py py-class docutils literal notranslate"><span class="pre">PoLines</span></code></a></p>
 </dd>
 </dl>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_params</span></code> dict can include:</p>
@@ -471,11 +465,6 @@
 <dt>q</dt><dd><p><em>e.g.:</em> number~123456, po_number~PO123, title~spenser</p>
 </dd>
 </dl>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="acquisitions_models.html#almonaut.acquisitions.acquisitions_models.PoLines" title="almonaut.acquisitions.acquisitions_models.PoLines"><code class="xref py py-class docutils literal notranslate"><span class="pre">PoLines</span></code></a></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -483,13 +472,13 @@
 <span class="sig-name descname"><span class="pre">get_electronic_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_electronic_collection" title="Permalink to this definition">#</a></dt>
 <dd><p>Get an Electronic Collection record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>collection_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic collection ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.ElectronicCollection" title="almonaut.electronic_resources.electronic_resources_models.ElectronicCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElectronicCollection</span></code></a></p>
 </dd>
 </dl>
@@ -500,15 +489,15 @@
 <span class="sig-name descname"><span class="pre">get_electronic_collections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_electronic_collections" title="Permalink to this definition">#</a></dt>
 <dd><p>Get Electronic Collection records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.ElectronicCollections" title="almonaut.electronic_resources.electronic_resources_models.ElectronicCollections"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElectronicCollections</span></code></a></p>
 </dd>
 </dl>
@@ -519,14 +508,14 @@
 <span class="sig-name descname"><span class="pre">get_electronic_service</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_electronic_service" title="Permalink to this definition">#</a></dt>
 <dd><p>Get an Electronic Service record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>collection_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic collection ID.</p></li>
 <li><p><strong>service_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic service ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.ElectronicService" title="almonaut.electronic_resources.electronic_resources_models.ElectronicService"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElectronicService</span></code></a></p>
 </dd>
 </dl>
@@ -537,16 +526,16 @@
 <span class="sig-name descname"><span class="pre">get_electronic_services</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_electronic_services" title="Permalink to this definition">#</a></dt>
 <dd><p>Get Electronic Service records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>collection_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic collection ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.ElectronicServices" title="almonaut.electronic_resources.electronic_resources_models.ElectronicServices"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElectronicServices</span></code></a></p>
 </dd>
 </dl>
@@ -557,7 +546,7 @@
 <span class="sig-name descname"><span class="pre">get_portfolio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">portfolio_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_portfolio" title="Permalink to this definition">#</a></dt>
 <dd><p>Get a Portfolio record.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>collection_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic collection ID.</p></li>
 <li><p><strong>service_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic service ID.</p></li>
@@ -565,7 +554,7 @@
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.Portfolio" title="almonaut.electronic_resources.electronic_resources_models.Portfolio"><code class="xref py py-class docutils literal notranslate"><span class="pre">Portfolio</span></code></a></p>
 </dd>
 </dl>
@@ -576,17 +565,17 @@
 <span class="sig-name descname"><span class="pre">get_portfolios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_records</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#almonaut.client.AlmaApiClient.get_portfolios" title="Permalink to this definition">#</a></dt>
 <dd><p>Get Portfolio records.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>collection_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic collection ID.</p></li>
 <li><p><strong>service_id</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Alma electronic service ID.</p></li>
 <li><p><strong>format_</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, default: <code class="docutils literal notranslate"><span class="pre">'json'</span></code>) – Format of the raw returned data.</p></li>
 <li><p><strong>limit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, default: <code class="docutils literal notranslate"><span class="pre">5</span></code>) – The maximum number of records to be returned.</p></li>
 <li><p><strong>all_records</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Whether or not all matching records should be returned (overrides <code class="docutils literal notranslate"><span class="pre">limit</span></code>).</p></li>
-<li><p><strong>extra_params</strong> – Additional parameters.</p></li>
+<li><p><strong>extra_params</strong> (default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – Additional parameters.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="electronic_resources_models.html#almonaut.electronic_resources.electronic_resources_models.Portfolios" title="almonaut.electronic_resources.electronic_resources_models.Portfolios"><code class="xref py py-class docutils literal notranslate"><span class="pre">Portfolios</span></code></a></p>
 </dd>
 </dl>
@@ -594,7 +583,7 @@
 
 </dd></dl>
 
-</div>
+</section>
 
         </article>
       </div>
@@ -625,7 +614,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2022, University of Waterloo
+                Copyright &#169; 2022-2023, University of Waterloo
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -691,9 +680,6 @@
     </aside>
   </div>
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
